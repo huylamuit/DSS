@@ -5,7 +5,7 @@ from flask_cors import CORS
 
 app = Flask(__name__)
 
-model_path = "./back-end/knn_model.pkl"  # Replace with the actual path
+model_path = "knn_model.pkl"  # Replace with the actual path
 model = joblib.load(model_path)
 
 
