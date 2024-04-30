@@ -15,11 +15,15 @@ function InputForm({ setResult }) {
   const handleSubmit = async (event) => {
     event.preventDefault();
 
-    const response = await axios.post("http://127.0.0.1:5000/predict", data, {
-      headers: {
-        "Content-Type": "application/json",
-      },
-    });
+    const response = await axios.post(
+      "https://dss-backend-pm83.onrender.com/predict",
+      data,
+      {
+        headers: {
+          "Content-Type": "application/json",
+        },
+      }
+    );
     console.log(response.data);
     setResult(response.data);
   };
