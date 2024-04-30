@@ -1,0 +1,51 @@
+.form-container {
+  background-color: rgb(231, 231, 231);
+  width: 50vw;
+  min-height: 50vh;
+  height: fit-content;
+  border-radius: 10px;
+  -webkit-box-shadow: 8px 8px 24px -12px rgba(66, 68, 90, 1);
+  -moz-box-shadow: 8px 8px 24px -12px rgba(66, 68, 90, 1);
+  box-shadow: 8px 8px 24px -12px rgba(66, 68, 90, 1);
+
+  /* drop-shadow(2px 1px 8px #000000); */
+}
+
+table.cinereousTable {
+  width: 100%;
+  text-align: center;
+  margin: 10px;
+}
+table.cinereousTable td,
+table.cinereousTable th {
+  padding: 2px 2px;
+}
+table.cinereousTable tbody td {
+  font-size: 13px;
+}
+table.cinereousTable tfoot td {
+  font-size: 16px;
+}
+
+.form-input {
+  width: 80%;
+  height: 50px;
+  border: none;
+  border-bottom: 2px solid gray;
+  padding: 5px;
+  background-color: rgb(231, 231, 231);
+}
+
+.btn-submit {
+  height: 35px;
+  margin: 10px;
+  background-color: rgb(16, 141, 199);
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 12px;
+}
+.btn-submit:hover {
+  cursor: pointer;
+  background-color: rgb(14, 122, 172);
+}
