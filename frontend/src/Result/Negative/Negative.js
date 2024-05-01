@@ -6,9 +6,20 @@ import {
   LinearScale,
   PointElement,
   LineElement,
+  Title,
+  Tooltip,
+  Legend,
 } from "chart.js";
-ChartJS.register(CategoryScale, LinearScale, PointElement, LineElement);
 import "./Negative.css";
+ChartJS.register(
+  CategoryScale,
+  LinearScale,
+  PointElement,
+  LineElement,
+  Title,
+  Tooltip,
+  Legend
+);
 function Negative({ input }) {
   const positive = [141.25, 70.82, 22.16, 100.33, 35.14];
   const negative = [109.98, 68.18, 19.66, 68.79, 30.3];
