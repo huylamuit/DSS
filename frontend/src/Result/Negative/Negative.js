@@ -1,6 +1,15 @@
 import { Bar } from "react-chartjs-2";
+import { Chart as ChartJS, ArcElement, Tooltip, Legend } from "chart.js";
 import { useEffect, useState } from "react";
-
+ChartJS.register(
+  CategoryScale,
+  LinearScale,
+  PointElement,
+  LineElement,
+  Title,
+  Tooltip,
+  Legend
+);
 import "./Negative.css";
 function Negative({ input }) {
   const positive = [141.25, 70.82, 22.16, 100.33, 35.14];
