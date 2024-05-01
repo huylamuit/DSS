@@ -5,10 +5,14 @@ import InputForm from "./InputForm/InputForm";
 import { useState } from "react";
 function App() {
   const [result, setResult] = useState(null);
+  const [inputData, setInputData] = useState(null);
   return (
     <div className="App">
-      <InputForm setResult={(data) => setResult(data)} />
-      {result && <Result result={result.Result} />}
+      <InputForm
+        setResult={(data) => setResult(data)}
+        setInput={(data) => setInputData(data)}
+      />
+      {result && <Result result={result.Result} data={inputData} />}
     </div>
   );
 }

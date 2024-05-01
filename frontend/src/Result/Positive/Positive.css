@@ -1,0 +1,34 @@
+table.suggest-table {
+  border: 1px solid #1c6ea4;
+  background-color: #eeeeee;
+  width: 100%;
+  text-align: left;
+  border-collapse: collapse;
+}
+table.suggest-table td,
+table.suggest-table th {
+  border: 1px solid #aaaaaa;
+  padding: 3px 2px;
+}
+table.suggest-table tbody td {
+  font-size: 13px;
+}
+table.suggest-table tfoot td {
+  font-size: 14px;
+}
+table.suggest-table tfoot .links {
+  text-align: right;
+}
+table.suggest-table tfoot .links a {
+  display: inline-block;
+  background: #1c6ea4;
+  color: #ffffff;
+  padding: 2px 8px;
+  border-radius: 5px;
+}
+.positive-result {
+  text-align: left;
+}
+.positive-title {
+  color: red;
+}

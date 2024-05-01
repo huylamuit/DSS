@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "./InputForm.css";
 import axios from "axios";
-function InputForm({ setResult }) {
+function InputForm({ setResult, setInput }) {
   const [data, setData] = useState({
     Pregnancies: 0,
     Glucose: 0,
@@ -13,17 +13,16 @@ function InputForm({ setResult }) {
     Age: 0,
   });
   const handleSubmit = async (event) => {
+    console.log(data);
+    setInput(data);
     event.preventDefault();
-
-    const response = await axios.post(
-      "https://dss-backend-pm83.onrender.com/predict",
-      data,
-      {
-        headers: {
-          "Content-Type": "application/json",
-        },
-      }
-    );
+    const url = "https://dss-backend-pm83.onrender.com/predict";
+    // const url = "http://127.0.0.1:5000/predict";
+    const response = await axios.post(url, data, {
+      headers: {
+        "Content-Type": "application/json",
+      },
+    });
     console.log(response.data);
     setResult(response.data);
   };
